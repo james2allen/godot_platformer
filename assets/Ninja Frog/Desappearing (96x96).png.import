@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6o2w15v5sy5c"
-path="res://.godot/imported/Desappearing (96x96).png-fac87e8886e7dff00aead69d5296c5b5.ctex"
+path="res://.godot/imported/Desappearing (96x96).png-726caf287c2cf4bc9819623cd9ea8f0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ninja Frog/Desappearing (96x96).png"
-dest_files=["res://.godot/imported/Desappearing (96x96).png-fac87e8886e7dff00aead69d5296c5b5.ctex"]
+source_file="res://assets/Ninja Frog/Desappearing (96x96).png"
+dest_files=["res://.godot/imported/Desappearing (96x96).png-726caf287c2cf4bc9819623cd9ea8f0a.ctex"]
 
 [params]
 
