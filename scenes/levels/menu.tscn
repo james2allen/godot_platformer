@@ -1,0 +1,71 @@
+[gd_scene load_steps=8 format=3 uid="uid://dyhmrmh2thwcl"]
+
+[ext_resource type="FontFile" uid="uid://jf2kd0v8wpud" path="res://assets/Regule5-Bold.otf" id="1_2mm86"]
+[ext_resource type="Shader" path="res://shaders/background_scroll.gdshader" id="1_or6nf"]
+[ext_resource type="Texture2D" uid="uid://m48hleoybb0c" path="res://assets/Brown.png" id="2_fvg5h"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6jfd2"]
+shader = ExtResource("1_or6nf")
+shader_parameter/x_speed = 1.0
+shader_parameter/y_speed = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_03sx6"]
+font = ExtResource("1_2mm86")
+font_size = 180
+
+[sub_resource type="LabelSettings" id="LabelSettings_mmdq1"]
+font = ExtResource("1_2mm86")
+font_size = 120
+
+[sub_resource type="Theme" id="Theme_tg85r"]
+default_font = ExtResource("1_2mm86")
+default_font_size = 40
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_6jfd2")
+offset_right = 1162.0
+offset_bottom = 657.0
+texture = ExtResource("2_fvg5h")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = 153.0
+offset_top = 44.0
+offset_right = 1023.0
+offset_bottom = 249.0
+theme_type_variation = &"HeaderLarge"
+theme_override_fonts/font = ExtResource("1_2mm86")
+text = "Frog"
+label_settings = SubResource("LabelSettings_03sx6")
+uppercase = true
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 333.0
+offset_top = 197.0
+offset_right = 596.0
+offset_bottom = 322.0
+text = "run"
+label_settings = SubResource("LabelSettings_mmdq1")
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+offset_left = 446.0
+offset_top = 338.0
+offset_right = 590.0
+offset_bottom = 416.0
+theme = SubResource("Theme_tg85r")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.266667, 0.262745, 0.286275, 1)
+theme_override_colors/font_hover_color = Color(0.72549, 0.72549, 0.72549, 1)
+text = "START"

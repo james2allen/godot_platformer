@@ -1,0 +1,76 @@
+[gd_scene load_steps=15 format=3 uid="uid://kmi8mtlpbaoy"]
+
+[ext_resource type="Texture2D" uid="uid://c13kid2cnppf8" path="res://assets/BouncePad/Jump (28x28).png" id="1_jiuw0"]
+[ext_resource type="Script" path="res://scripts/BouncePad.gd" id="1_kjlla"]
+[ext_resource type="Texture2D" uid="uid://dlqkeo676yv70" path="res://assets/BouncePad/Idle.png" id="2_vtxxa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5qaih"]
+size = Vector2(13, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_am07h"]
+atlas = ExtResource("1_jiuw0")
+region = Rect2(0, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7duex"]
+atlas = ExtResource("1_jiuw0")
+region = Rect2(28, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nu40g"]
+atlas = ExtResource("1_jiuw0")
+region = Rect2(56, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aa2h5"]
+atlas = ExtResource("1_jiuw0")
+region = Rect2(84, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7ios"]
+atlas = ExtResource("1_jiuw0")
+region = Rect2(112, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5quy1"]
+atlas = ExtResource("1_jiuw0")
+region = Rect2(140, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_otshl"]
+atlas = ExtResource("1_jiuw0")
+region = Rect2(168, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdon0"]
+atlas = ExtResource("1_jiuw0")
+region = Rect2(196, 0, 28, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bcu6m"]
+animations = [{
+"frames": [SubResource("AtlasTexture_am07h"), SubResource("AtlasTexture_7duex"), SubResource("AtlasTexture_nu40g"), SubResource("AtlasTexture_aa2h5"), SubResource("AtlasTexture_j7ios"), SubResource("AtlasTexture_5quy1"), SubResource("AtlasTexture_otshl"), SubResource("AtlasTexture_rdon0")],
+"loop": true,
+"name": &"bounce",
+"speed": 20.0
+}, {
+"frames": [ExtResource("2_vtxxa")],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_47885"]
+size = Vector2(24, 6)
+
+[node name="BouncePad" type="StaticBody2D"]
+script = ExtResource("1_kjlla")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 11)
+shape = SubResource("RectangleShape2D_5qaih")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+frames = SubResource("SpriteFrames_bcu6m")
+playing = true
+
+[node name="BounceZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BounceZone"]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_47885")
+
+[connection signal="body_entered" from="BounceZone" to="." method="_on_bounce_zone_body_entered"]

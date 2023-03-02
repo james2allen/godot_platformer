@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3d02dxu6711g"]
+
+[ext_resource type="Texture2D" uid="uid://bp5w71eiot3ky" path="res://assets/Spikes.png" id="1_hwgh6"]
+[ext_resource type="Script" path="res://scripts/Spikes.gd" id="1_t145l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8kp4"]
+size = Vector2(10, 2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hw1lp"]
+size = Vector2(31, 5)
+
+[node name="Spikes" type="StaticBody2D"]
+position = Vector2(8, -2)
+script = ExtResource("1_t145l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_t8kp4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_hwgh6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-16, 0)
+texture = ExtResource("1_hwgh6")
+
+[node name="KillZone" type="Area2D" parent="."]
+
+[node name="KillZoneShape" type="CollisionShape2D" parent="KillZone"]
+position = Vector2(-8.5, 5.5)
+shape = SubResource("RectangleShape2D_hw1lp")
+
+[connection signal="body_entered" from="KillZone" to="." method="_on_kill_zone_body_entered"]
