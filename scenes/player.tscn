@@ -1,6 +1,6 @@
 [gd_scene load_steps=57 format=3]
 
-[ext_resource type="Script" path="res://scripts/Player.gd" id="1_0hi0d"]
+[ext_resource type="Script" path="res://scripts/player_controller.gd" id="1_0hi0d"]
 [ext_resource type="Texture2D" uid="uid://c1auu4a6myx2y" path="res://assets/Ninja Frog/Idle (32x32).png" id="1_uwt6c"]
 [ext_resource type="Texture2D" uid="uid://b5mavsg0pp57p" path="res://assets/Ninja Frog/Wall Jump (32x32).png" id="2_d6r8s"]
 [ext_resource type="Texture2D" uid="uid://c6o2w15v5sy5c" path="res://assets/Ninja Frog/Desappearing (96x96).png" id="2_gvnb8"]

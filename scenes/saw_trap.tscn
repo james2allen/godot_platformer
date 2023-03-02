@@ -1,7 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://c7tmeyx15cl1e"]
+[gd_scene load_steps=14 format=3]
 
 [ext_resource type="Texture2D" uid="uid://7en7jeklncr4" path="res://assets/On (38x38).png" id="1_1k4bi"]
-[ext_resource type="Script" path="res://scripts/SawTrap.gd" id="1_i1ebp"]
+[ext_resource type="Script" path="res://scripts/saw_trap.gd" id="1_i1ebp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x0ibw"]
 radius = 10.0499

@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://m48hleoybb0c" path="res://assets/Brown.png" id="1_atwee"]
 [ext_resource type="Shader" path="res://shaders/background_scroll.gdshader" id="1_ib7wi"]
-[ext_resource type="PackedScene" uid="uid://cf0a5kj1vsiaw" path="res://scenes/player.tscn" id="2_ml4xo"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="2_ml4xo"]
 [ext_resource type="Texture2D" uid="uid://b3o1r8g4ld7rh" path="res://assets/Terrain (16x16).png" id="3_jgycy"]
-[ext_resource type="PackedScene" uid="uid://c3d02dxu6711g" path="res://scenes/spikes.tscn" id="4_teuge"]
-[ext_resource type="PackedScene" uid="uid://kmi8mtlpbaoy" path="res://scenes/bounce_pad.tscn" id="5_5qno6"]
-[ext_resource type="PackedScene" uid="uid://c7tmeyx15cl1e" path="res://scenes/saw_trap.tscn" id="6_84orb"]
+[ext_resource type="PackedScene" path="res://scenes/spikes.tscn" id="4_teuge"]
+[ext_resource type="PackedScene" uid="uid://wse0s6mqj14i" path="res://scenes/bounce_pad.tscn" id="5_5qno6"]
+[ext_resource type="PackedScene" path="res://scenes/saw_trap.tscn" id="6_84orb"]
 [ext_resource type="PackedScene" uid="uid://c7gdnrwabolg1" path="res://scenes/finish_level.tscn" id="7_1l3wa"]
 [ext_resource type="PackedScene" uid="uid://kraut514vqgc" path="res://scenes/fruit.tscn" id="9_3t4g8"]
 

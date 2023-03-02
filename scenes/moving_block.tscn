@@ -1,7 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://c77w1mfx07mnr"]
+[gd_scene load_steps=19 format=3 uid="uid://d0lhluvyoccrj"]
 
-[ext_resource type="Script" path="res://scripts/MovingBlock.gd" id="1_ajo5s"]
 [ext_resource type="Texture2D" uid="uid://dosqkfo6l4pm4" path="res://assets/Rock Head/Idle.png" id="1_imseo"]
+[ext_resource type="Script" path="res://scripts/moving_block.gd" id="1_qecwn"]
 [ext_resource type="Texture2D" uid="uid://rw2itigenhq5" path="res://assets/Rock Head/Right Hit (42x42).png" id="2_o71gv"]
 [ext_resource type="Texture2D" uid="uid://duixvf2rlxg0r" path="res://assets/Rock Head/Bottom Hit (42x42).png" id="3_1cj2b"]
 
@@ -72,7 +72,7 @@ size = Vector2(26, 29)
 
 [node name="MovingBlock" type="CharacterBody2D"]
 motion_mode = 1
-script = ExtResource("1_ajo5s")
+script = ExtResource("1_qecwn")
 directions_array = [Vector2(0, 0)]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

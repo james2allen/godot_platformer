@@ -1,12 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://dh55gn1htq86x"]
+[gd_scene load_steps=13 format=3 uid="uid://cgwnosdnhg813"]
 
 [ext_resource type="Shader" path="res://shaders/background_scroll.gdshader" id="1_pqiku"]
 [ext_resource type="Texture2D" uid="uid://fr3dqabdrfi6" path="res://assets/Purple.png" id="2_cwcpq"]
-[ext_resource type="PackedScene" uid="uid://cf0a5kj1vsiaw" path="res://scenes/player.tscn" id="3_xfafg"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="3_xfafg"]
 [ext_resource type="Texture2D" uid="uid://b3o1r8g4ld7rh" path="res://assets/Terrain (16x16).png" id="4_yrwdl"]
-[ext_resource type="Script" path="res://scripts/DeathBoundary.gd" id="5_tepfc"]
+[ext_resource type="Script" path="res://scripts/death_boundary.gd" id="5_tepfc"]
 [ext_resource type="PackedScene" uid="uid://kraut514vqgc" path="res://scenes/fruit.tscn" id="6_mh4b0"]
-[ext_resource type="PackedScene" uid="uid://cqr1b4sq3j0jl" path="res://scenes/falling_platform.tscn" id="7_2lt6r"]
+[ext_resource type="PackedScene" path="res://scenes/falling_platform.tscn" id="7_2lt6r"]
 [ext_resource type="PackedScene" uid="uid://c7gdnrwabolg1" path="res://scenes/finish_level.tscn" id="8_uit13"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_eir83"]

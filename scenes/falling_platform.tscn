@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://cqr1b4sq3j0jl"]
+[gd_scene load_steps=11 format=3]
 
-[ext_resource type="Script" path="res://scripts/FallingPlatform.gd" id="1_gcgo3"]
+[ext_resource type="Script" path="res://scripts/falling_platform.gd" id="1_gcgo3"]
 [ext_resource type="Texture2D" uid="uid://dg03fu2tytab5" path="res://assets/Falling Platforms/On (32x10)-export.png" id="3_6lst0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2hd14"]

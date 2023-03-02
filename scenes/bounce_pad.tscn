@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://kmi8mtlpbaoy"]
+[gd_scene load_steps=15 format=3 uid="uid://wse0s6mqj14i"]
 
 [ext_resource type="Texture2D" uid="uid://c13kid2cnppf8" path="res://assets/BouncePad/Jump (28x28).png" id="1_jiuw0"]
-[ext_resource type="Script" path="res://scripts/BouncePad.gd" id="1_kjlla"]
+[ext_resource type="Script" path="res://scripts/bounce_pad.gd" id="1_kjlla"]
 [ext_resource type="Texture2D" uid="uid://dlqkeo676yv70" path="res://assets/BouncePad/Idle.png" id="2_vtxxa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5qaih"]
